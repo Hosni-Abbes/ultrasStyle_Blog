@@ -1,0 +1,134 @@
+.article_insection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid #37474f;
+  background-color: #263238;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.article_desc {
+  margin: 2px 0px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.article_desc small,
+.comntBlogDate {
+  margin: 5px 0 10px;
+  display: block;
+  color: #9e9e9e;
+  font-size: 10px;
+}
+.articleTitle {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  word-break: break-word;
+}
+.article_info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+  color: #9e9e9e;
+  margin-top: 12px;
+  border-top: 1px solid #37474f;
+  padding: 6px 0;
+  align-items: center;
+  border-bottom: 1px solid #37474f;
+}
+.load_more_articles {
+  color: #009688;
+  cursor: pointer;
+}
+.article_overview p {
+  font-size: 13px;
+}
+.loadMoreDiv {
+  margin: 10px 0px;
+}
+.loadMoreBtn {
+  cursor: pointer;
+  border: 1px solid #455a64;
+  border-radius: 4px;
+  padding: 4px;
+  color: #388e3c;
+  transition: all 0.3s ease-in-out;
+}
+.loadMoreBtn:nth-of-type(2) {
+  color: #f44336;
+  margin-left: 10px;
+}
+.loadMoreBtn:hover {
+  color: #eee;
+  background: #607d8b;
+}
+.comments_art_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.comments_art_form textarea {
+  resize: none;
+  background: #263238;
+  color: #eee;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #37474f;
+  margin: 8px 0px;
+}
+.comments_art_form button {
+  background: #37474f;
+  border: none;
+  border-radius: 4px;
+  color: #80cbc4;
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.comments_art_form button:hover {
+  background: #78909c;
+  color: #004d40;
+}
+.artInfo_spns span:nth-of-type(2) {
+  margin-left: 20px;
+}
+.m-auto {
+  margin: 12px auto !important;
+}
+.showAllArtComments {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 4px 14px;
+}
+.blog_art_cmnts {
+  display: none;
+}
+.showBlogComBtn,
+.artInfo_spns i {
+  cursor: pointer;
+}
+.closeBlogCmnts {
+  font-size: 13px;
+  color: #f44336;
+  margin-left: 10px;
+  background: #37474f;
+  border-radius: 4px;
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.closeBlogCmnts:hover {
+  color: #fafafa;
+  background: #e57373;
+}
+.artInfo_spns span:first-of-type {
+  color: #f44336;
+}
+.theCommentBlogArt {
+  font-size: 13px;
+  color: #eee;
+}

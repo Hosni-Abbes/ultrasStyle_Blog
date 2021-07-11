@@ -1,0 +1,238 @@
+.supPageArt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.first_up {
+  display: flex;
+  justify-content: space-between;
+}
+.the_1main_cont {
+  width: 75%;
+  border-right: 1px solid #37474f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.the_sup_title {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #eee;
+  font-size: 20px;
+}
+.the_1main_cont small {
+  color: #757575;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.the_sup_desc {
+  color: #eee;
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+.the_sup_images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.art_sup_media {
+  margin-bottom: 50px;
+  width: 90%;
+  height: 300px;
+}
+.art_sup_media img {
+  border-radius: 6px;
+}
+.page_not_Exist {
+  width: 100%;
+  border-right: 1px solid #37474f;
+  color: #ef5350;
+  text-align: center;
+  padding: 100px 0;
+  font-size: 26px;
+}
+.first_up aside {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.first_up aside p {
+  color: #00897b;
+  border-bottom: 1px solid #37474f;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.first_up aside a:nth-of-type(2) {
+  margin: 0px 6px;
+}
+/*FROM COUNTRIES*/
+.first_up_supPage {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+.first_up_supPage .supSpan {
+  background: #004d40;
+  margin: 10px 0;
+  padding: 30px;
+  color: #eee;
+  font-size: 20px;
+}
+.first_up_supArt,
+.first_up_supImg,
+.first_up_supVid {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.supMovie {
+  width: 49%;
+}
+/*COMMENTS*/
+.the_comments {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.comments_allP {
+  text-align: center;
+  margin: 5px 0px;
+  border-bottom: 1px solid #37474f;
+  color: #00897b;
+  padding-bottom: 5px;
+}
+.comment_data {
+  margin-bottom: 12px;
+}
+.showAAllComments {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.comment_member_data {
+  display: flex;
+  align-items: center;
+}
+.comment_member_data span {
+  margin-left: 10px;
+  color: #2196f3;
+}
+.comment_member_data p {
+  margin: 2px 0 20px;
+}
+.comment_member_data i,
+.comment_member_data img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #00695c;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 29px;
+  background: #004d40;
+  color: #eee;
+}
+.theCommentParag {
+  color: #9e9e9e;
+}
+.the_comments form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+.the_comments form textarea {
+  width: 100%;
+  background: #263238;
+  border: 1px solid #37474f;
+  padding: 10px;
+  outline: none;
+  color: #eee;
+  resize: none;
+  margin-bottom: 8px;
+}
+.the_comments form button {
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: none;
+  background: #004d40;
+  color: #eee;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.the_comments form button:hover {
+  background: #00695c;
+}
+.comment_data small {
+  color: #546e7a;
+  font-size: 11px;
+}
+.NoComments {
+  color: #546e7a;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+}
+.comment_scroll {
+  max-height: 200px;
+  overflow: scroll;
+}
+.comments_errors {
+  width: 100%;
+  background: #37474f;
+  border-radius: 4px;
+  padding: 6px 16px;
+  color: #f44336;
+  line-height: 1.6;
+}
+.comments_errors a {
+  color: #009688;
+  background: #263238;
+  padding: 4px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+.comments_errors a:hover {
+  color: #4db6ac;
+  background: #455a64;
+}
+.comments_errors_cont {
+  position: relative;
+  display: none;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+.comments_errors_cont span {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #009688;
+}
+/*MEDIA QUERIES*/
+@media (max-width: 575px) {
+  .the_1main_cont {
+    width: 100%;
+    border: none;
+  }
+  .art_sup_media {
+    width: 100%;
+  }
+  .new_gallery div {
+    height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .supMovie {
+    width: 100%;
+  }
+}

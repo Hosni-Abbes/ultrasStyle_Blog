@@ -1,0 +1,122 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 30;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15%;
+  background: #004d40;
+  border-bottom: 1px solid #00695c;
+}
+header a {
+  color: #eee;
+}
+.logo_link {
+  color: #00bcd4;
+  font-weight: 600;
+}
+.logo_link span {
+  font-size: 22px;
+  color: #cddc39;
+  font-weight: 600;
+}
+.header_links {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 40%;
+  align-items: center;
+}
+.header_links a:hover {
+  color: #9e8a4c;
+}
+.menu_btn {
+  display: none;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+.menu_btn span {
+  display: block;
+  width: 25px;
+  margin: 3px 0;
+  background: #333;
+  padding: 1px;
+}
+.userLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.the_username {
+  color: #9e8a47;
+  font-size: 20px;
+  font-weight: 700;
+}
+.user_logout {
+  background: #212121;
+  color: #eee;
+  font-weight: 700;
+  padding: 4px 8px;
+  margin-top: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.user_logout:hover {
+  background: #424242;
+}
+.d-flex {
+  display: flex !important;
+}
+/* MEDIA QUERIES */
+@media (max-width: 575px) {
+  header {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 991px) {
+  header {
+    padding: 10px 10%;
+  }
+  .menu_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header_links {
+    display: none;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #00897b;
+    min-width: 200px;
+    width: 100%;
+    padding: 20px 10%;
+  }
+  .header_links a {
+    margin-top: 14px;
+  }
+  .userLogin {
+    flex-direction: row;
+    padding-bottom: 8px;
+    width: 100%;
+    border-bottom: 1px solid #80cbc4;
+  }
+}
+/*OTHER CLASSES*/
+.active {
+  color: #9e8a4c;
+}
+/* we use this class flex_basis 50% when member is loged in*/
+.flex_basis {
+  flex-basis: 50%;
+}

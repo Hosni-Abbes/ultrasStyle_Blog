@@ -1,0 +1,119 @@
+.movies_container {
+  background: #263238;
+}
+.movies_container p {
+  color: #9e9e9e;
+}
+.movie_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #004d40;
+  color: #eee;
+  padding: 12px;
+}
+.movies_block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.movie {
+  display: flex;
+  flex-direction: column;
+  width: 33.3333%;
+  margin-bottom: 20px;
+  background: #37474f;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #263238;
+}
+.movie:first-of-type,
+.movie:nth-of-type(2),
+.movie:nth-of-type(3) {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.video_info {
+  border-top: 1px solid #607d8b;
+  margin-top: 10px;
+  padding: 5px;
+  background: #263238;
+  border-radius: 2px;
+  color: #eee;
+  height: 100%;
+}
+.video_info p {
+  margin: 4px 0px;
+}
+/* ADD VIDEO SECTION */
+.add_video_text {
+  padding: 10px;
+  border-bottom: 1px solid #9e9e9e;
+}
+.add_video_text p {
+  margin: 4px 0;
+}
+.add_video_text a {
+  color: #009688;
+  transition: all 0.2s ease-in-out;
+}
+.add_video_text a:hover {
+  color: #00695c;
+}
+.videos_country a {
+  background: #004d40;
+  padding: 6px;
+  color: #eeeeee;
+  margin: 2px;
+  transition: all 0.2s ease-in-out;
+}
+.videos_country a:hover {
+  background: #5b827b;
+  color: #004d40;
+}
+/* MEDIA QUERY */
+@media (max-width: 767px) {
+  .movies_container h2 {
+    font-size: 16px;
+  }
+  .movies_container p {
+    font-size: 14px;
+  }
+  .movie {
+    flex-direction: column-reverse;
+    width: 100%;
+    border-radius: 6px;
+  }
+  .movie:first-of-type {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .movie:nth-of-type(2),
+  .movie:nth-of-type(3) {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .movies_container h2 {
+    font-size: 18px;
+  }
+  .movies_container p {
+    font-size: 16px;
+  }
+  .movie {
+    width: 50%;
+  }
+  .movie:first-of-type,
+  .movie:nth-of-type(2) {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .movie:nth-of-type(3) {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+}
